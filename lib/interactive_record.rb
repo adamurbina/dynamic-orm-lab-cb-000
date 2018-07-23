@@ -60,7 +60,9 @@ class InteractiveRecord
     end
 
     def self.find_by(hash={})
-        
+        DB[:conn].results_as_hash
+        sql = <<-SQL
+        SQL
     end
 
 end
